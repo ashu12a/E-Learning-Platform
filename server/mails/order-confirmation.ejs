@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confim</title>
+</head>
+<body>
+
+    <section style="border: 2px solid blueviolet;">
+        <div style="background-color: blueviolet;  text-align: center; margin-top: -10px;">
+            <h1 style="color:white;">Order Confim</h1>
+        </div>
+        <div style="padding-left: 10px; padding-right: 10px; padding-bottom: 10px;">
+            <p style="font-size: 15px; text-align: center;">Your Elearning order is confirm</p>
+            <h2 style="text-align:center; font-size: 15px;">Here's what you ordered:</h2>
+
+            <table border="2">
+                <tr>
+                    <th>
+                        Order Id
+                    </th>
+                    <th>
+                        Order name
+                    </th>
+                    <th>
+                        Order price
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <%= order.id%>
+                    </td>
+                    <td>
+                        <%= order.name%>
+                    </td>
+                    <td>
+                       <%= order.price%>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div style="background-color: blueviolet; text-align: center;">
+            <h1 style="color:white;">Thank You</h1>
+        </div>
+    </section>
+    
+</body>
+</html>
